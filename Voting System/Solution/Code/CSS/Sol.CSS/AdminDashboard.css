@@ -1,0 +1,81 @@
+.container_3 {
+    background: #EEF1FF;
+    font-family: Times New Roman;
+}
+
+.side-panel {
+    margin-bottom: 0;
+    padding: 20px;
+    background: linear-gradient(to top, #AAC4FF,60%,white);
+    width: 200px;
+    height:fit-content;
+    border: 1px solid;
+    box-shadow: 0 0 5px blue;
+}
+
+.Dash{
+    margin-top:-700px;
+    margin-left:250px;
+}
+
+#panel-horizontal {
+    background: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+.panel-link {
+    height: 50px;
+    background: linear-gradient(to top, #AAC4FF,60%,white);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px blue;
+    transition: 0.3s ease;
+    color: black;
+    decoration: none;
+    padding: 10px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+    .panel-link:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.Election {
+    height: 100vh;
+    text-align: center;
+    font-family: Times New Roman;
+    margin-left: 200px;
+    margin-top: -580px;
+}
+
+.ElectionBox {
+    border: 1px solid;
+    background: linear-gradient(to top, rgba(0,0,0,0.1)50%,rgba(0,0,0,0.1)50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.btnStatus {
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 200px;
+    background: linear-gradient(to top, #D2DAFF,60%,white);
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+h7 {
+    color: black;
+    padding: 14px 0;
+}
+
+.ElectEntry {
+    Margin-top: 10px;
+    margin-left: 10px;
+}

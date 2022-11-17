@@ -1,0 +1,16 @@
+﻿body{
+    background:linear-gradient(to right, rgb(93 92 190), rgb(6 16 199));
+    padding-top:50px;
+    padding-bottom:50px;
+}
+#container{
+    padding:10px;
+    height:500px;
+}
+h1{
+    color:black;
+}
+sub_btn{
+    width:100px;
+    background-color:blue;
+}

@@ -1,0 +1,193 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Voting_System.Solution.Code.HTML.Main" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%--CSS files--%>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="../CSS/Bundle/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/datatables/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="../CSS/fontawsome/css/all.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/AdminDashboard.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/Add%20Candidates.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/Stylesheet2.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/Admin.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/defaults.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/myModal.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/Candidates_Profile.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/newElection.css" rel="stylesheet" />
+    <link href="../CSS/Sol.CSS/CitizenVote.css" rel="stylesheet" />
+
+    <%--JS files--%>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../CSS/Bundle/js/bootstrap.bundle.min.js"></script>
+    <script src="../CSS/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../CSS/fontawsome/js/all.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <section id="panel">
+
+                <%--Navigation panel--%>
+
+                <nav class="navbar navbar-expand-lg navbar-light" style="background-color: Highlight !important;">
+                    <div class="Logo">
+                        <img src="../../Resources/Pictures/featured-vote.jpg" style="height: 60px; width: 60px; border-radius: 50%;" />
+                    </div>
+                    <%-- Nav Button start--%>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Supported" aria-controls="Supported" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <%--Nav button end--%>
+
+                    <%--Nav Items--%>
+
+                    <div class="collapse navbar-collapse" id="Supported">
+
+                        <center>
+                            <ul class="nav navbar-nav ">
+                                <li class="nav-item"><a href="Home.aspx" class="nav-link active" aria-current="Page" id="Home">Home</a></li>
+                                &nbsp
+                            <li class="nav-item"><a href="Infor_Center.aspx" class="nav-link" aria-current="Page" style="color: white !important">Information center</a></li>
+                                &nbsp
+                            <li class="nav-item"><a href="Results.aspx" target="_blank" class="nav-link" aria-current="Page" style="color: white !important">Results</a>
+                            </li>
+                                &nbsp
+                                <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="Voter" data-bs-toggle="dropdown" data-bs-target="#Voting_info" aria-haspopup="true" aria-expanded="false" aria-current="Page" style="color: white !important">Voters</a>
+                                    <ul class="dropdown-menu" aria-labelledby="Voter" id="Voting_info" style="width: 400px; height: 300px; background-color: Highlight !important;">
+                                        <li><a href="Why_Vote.aspx" style="color: white !important; text-decoration: none;"><span>&nbsp Why Vote</span></a></li>
+                                        <hr />
+                                        <li><a href="How_To_Vote.aspx" style="color: white !important; text-decoration: none;"><span>&nbsp How to Vote</span></a></li>
+                                        <hr />
+                                        <li><a href="ReportFraud.aspx" style="color: white !important; text-decoration: none;"><span>&nbsp Report Electoral fraud</span></a></li>
+                                        <hr />
+
+                                    </ul>
+                                </li>
+                                &nbsp
+                            <li class="dropdown"><a href="#" class="nav-link dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" data-bs-target="#Media_View" aria-haspopup="true" aria-expanded="false" aria-current="Page" style="color: white !important">Media</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="Media_View" style="width: 300px; background-color: Highlight !important;">
+                                    <li>
+                                        <center>
+                                            <h5><b style="color: white !important">Connect with us</b></h5>
+                                        </center>
+                                        <hr />
+                                        <li><a href="https://www.facebook.com/BuffaloCityMetro">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" aria-labelledby="facebook">
+                                                <title id="facebook">Facebook</title>
+                                                <path id="icnfacebook" fill="#FFFFFF" d="M20.653,16.009h-3.045c0,4.865,0,10.853,0,10.853h-4.512c0,0,0-5.93,0-10.853h-2.145v-3.836h2.145v-2.48c0-1.777,0.845-4.554,4.553-4.554l3.344,0.013v3.724c0,0-2.031,0-2.426,0c-0.396,0-0.957,0.197-0.957,1.045v2.254h3.438L20.653,16.009z" />
+                                            </svg><span style="color: white !important"> @BuffaloCityMetro</span></a></li>
+                                    <hr />
+                                    <li><a href="https://instagram.com/bcmm_youth_chamber_of_business?igshid=YmMyMTA2M2Y=">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" aria-labelledby="instagram">
+                                            <title id="instagram">Instagram</title>
+                                            <g id="icninstagram">
+                                                <path fill="#FFFFFF" d="M16,10.295c-3.146,0-5.705,2.56-5.705,5.705s2.56,5.705,5.705,5.705s5.705-2.56,5.705-5.705S19.146,10.295,16,10.295z M16,19.295c-1.816,0-3.295-1.479-3.295-3.295s1.479-3.294,3.295-3.294s3.294,1.478,3.294,3.294S17.816,19.295,16,19.295z" />
+                                                <circle fill="#FFFFFF" cx="21.889" cy="10.125" r="1.35" />
+                                                <path fill="#FFFFFF" d="M21.488,4.924H10.512c-3.081,0-5.588,2.507-5.588,5.588v10.977c0,3.081,2.507,5.588,5.588,5.588h10.977c3.081,0,5.588-2.507,5.588-5.588V10.512C27.076,7.431,24.569,4.924,21.488,4.924z M24.665,21.488c0,1.752-1.425,3.177-3.177,3.177H10.512c-1.751,0-3.177-1.425-3.177-3.177V10.512c0-1.751,1.426-3.177,3.177-3.177h10.977c1.752,0,3.177,1.426,3.177,3.177V21.488z" />
+                                            </g></svg><span style="color: white !important"> @Buffalo_City_Municipality</span></a></li>
+                                    <hr />
+                                    <li><a href="https://twitter.com/OfficialBCMM?t=GDYk9tN1H_U0EgZ0EflTjA&s=09">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" aria-labelledby="twitter">
+                                            <title id="twitter">Twitter</title>
+                                            <path id="icntwitter" fill="#FFFFFF" d="M25.284,11.305c-0.177,8.058-5.256,13.662-12.963,14.013c-3.152,0.176-5.43-0.875-7.531-2.102c2.277,0.351,5.254-0.525,6.831-1.927c-2.277-0.175-3.679-1.401-4.379-3.327c0.7,0.174,1.401,0,1.927,0c-2.102-0.701-3.504-1.928-3.679-4.73c0.525,0.35,1.227,0.525,1.928,0.525C5.841,12.881,4.79,9.553,6.016,7.451c2.277,2.452,5.08,4.554,9.634,4.904c-1.227-4.904,5.43-7.532,8.059-4.203c1.225-0.176,2.101-0.701,2.978-1.051c-0.352,1.226-1.052,1.927-1.928,2.627c0.876-0.175,1.751-0.35,2.452-0.701C27.035,9.903,26.159,10.604,25.284,11.305z" />
+                                        </svg><span style="color: white !important"> @OfficialBCMM</span></a></li>
+                                </ul>
+                            </li>
+                                &nbsp
+                            <li class="nav-item"><a href="#" class="nav-link" aria-current="Page" style="color: white !important">Help</a></li>
+                                &nbsp
+                            <li class="nav-item"><a href="About_Us.aspx" class="nav-link" aria-current="Page" style="color: white !important">About Us</a></li>
+                             &nbsp
+                                <li class="nav-item"><a href="CitizenVote.aspx" class="nav-link" aria-current="Page" style="color: white !important">Vote Now</a></li>
+                             &nbsp
+                                <li class="nav-item"><a href="SignIn.aspx" class="nav-link" aria-current="Page" style="color: white !important">Log out</a></li>
+                            </ul>
+                    </div>
+
+
+                </nav>
+                <%--Nav section end--%>
+            </section>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer style="background-color: Highlight !important">
+
+                <%--footer--%>
+                <section id="footer">
+                    <center>
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <h4><b style="color: white !important">Contact Us</b></h4>
+                                <br />
+                                <asp:Label ID="Phonelbl" runat="server" Text="Contact : 0643527805" Style="color: white !important"></asp:Label>
+                                <asp:Label ID="Emaillbl" runat="server" Text="Email : pnuematix91@gmail.com" Style="color: white !important"></asp:Label>
+
+                            </div>
+
+
+
+                            <div class="col-md-4">
+                                <h4><b style="color: white !important">Address</b></h4>
+                                <p style="color: white !important">
+                                    50 Church Street<br />
+                                    East London CBD<br />
+                                    East London<br />
+                                    5200
+                                </p>
+                            </div>
+
+
+
+                            <div class="col-md-4">
+                                <h4><b style="color: white !important">Media</b></h4>
+                                <a href="https://www.facebook.com/BuffaloCityMetro">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" aria-labelledby="facebook">
+                                        <title id="facebook">Facebook</title>
+                                        <path id="icnfacebook" fill="#FFFFFF" d="M20.653,16.009h-3.045c0,4.865,0,10.853,0,10.853h-4.512c0,0,0-5.93,0-10.853h-2.145v-3.836h2.145v-2.48c0-1.777,0.845-4.554,4.553-4.554l3.344,0.013v3.724c0,0-2.031,0-2.426,0c-0.396,0-0.957,0.197-0.957,1.045v2.254h3.438L20.653,16.009z" />
+                                    </svg><span style="color: white !important"> Facebook</span></a>
+
+                                <br />
+                                <a href="https://instagram.com/bcmm_youth_chamber_of_business?igshid=YmMyMTA2M2Y=">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" aria-labelledby="instagram">
+                                        <title id="instagram">Instagram</title>
+                                        <g id="icninstagram">
+                                            <path fill="#FFFFFF" d="M16,10.295c-3.146,0-5.705,2.56-5.705,5.705s2.56,5.705,5.705,5.705s5.705-2.56,5.705-5.705S19.146,10.295,16,10.295z M16,19.295c-1.816,0-3.295-1.479-3.295-3.295s1.479-3.294,3.295-3.294s3.294,1.478,3.294,3.294S17.816,19.295,16,19.295z" />
+                                            <circle fill="#FFFFFF" cx="21.889" cy="10.125" r="1.35" />
+                                            <path fill="#FFFFFF" d="M21.488,4.924H10.512c-3.081,0-5.588,2.507-5.588,5.588v10.977c0,3.081,2.507,5.588,5.588,5.588h10.977c3.081,0,5.588-2.507,5.588-5.588V10.512C27.076,7.431,24.569,4.924,21.488,4.924z M24.665,21.488c0,1.752-1.425,3.177-3.177,3.177H10.512c-1.751,0-3.177-1.425-3.177-3.177V10.512c0-1.751,1.426-3.177,3.177-3.177h10.977c1.752,0,3.177,1.426,3.177,3.177V21.488z" />
+                                        </g></svg><span style="color: white !important"> Instagram</span></a>
+
+                                <br />
+                                <a href="https://twitter.com/OfficialBCMM?t=GDYk9tN1H_U0EgZ0EflTjA&s=09">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve" aria-labelledby="twitter">
+                                        <title id="twitter">Twitter</title>
+                                        <path id="icntwitter" fill="#FFFFFF" d="M25.284,11.305c-0.177,8.058-5.256,13.662-12.963,14.013c-3.152,0.176-5.43-0.875-7.531-2.102c2.277,0.351,5.254-0.525,6.831-1.927c-2.277-0.175-3.679-1.401-4.379-3.327c0.7,0.174,1.401,0,1.927,0c-2.102-0.701-3.504-1.928-3.679-4.73c0.525,0.35,1.227,0.525,1.928,0.525C5.841,12.881,4.79,9.553,6.016,7.451c2.277,2.452,5.08,4.554,9.634,4.904c-1.227-4.904,5.43-7.532,8.059-4.203c1.225-0.176,2.101-0.701,2.978-1.051c-0.352,1.226-1.052,1.927-1.928,2.627c0.876-0.175,1.751-0.35,2.452-0.701C27.035,9.903,26.159,10.604,25.284,11.305z" />
+                                    </svg><span style="color: white !important"> Twitter</span></a>
+
+                            </div>
+                        </div>
+                    </center>
+                </section>
+                <%--End footer--%>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

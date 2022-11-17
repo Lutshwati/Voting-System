@@ -1,0 +1,68 @@
+﻿.container_3 {
+    background: #EEF1FF;
+    font-family: Times New Roman;
+    letter-spacing: 1px;
+}
+
+.side-panel {
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    background: linear-gradient(to top, #AAC4FF,60%,white);
+    width: 200px;
+    height: 100vh;
+    border: 1px solid;
+    box-shadow: 0 0 5px blue;
+}
+
+#panel-horizontal {
+    background: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+.panel-link {
+    height: 50px;
+    background: linear-gradient(to top, #AAC4FF,60%,white);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px blue;
+    transition: 0.3s ease;
+    color: black;
+    text-decoration: none;
+    padding: 10px 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+    .panel-link:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.Election {
+    text-align: center;
+    font-family: Times New Roman;
+    margin-left: 205px;
+    margin-top: -580px;
+}
+
+.myP {
+    margin-bottom: -2px;
+}
+
+.mytxtElect {
+    border: 1px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+#SelectAll {
+    padding: 10px;
+    border: 1px solid;
+}

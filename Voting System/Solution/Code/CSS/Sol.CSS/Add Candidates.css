@@ -1,0 +1,48 @@
+#drpWards {
+    box-shadow: 0 0 5px blue;
+    width: 150px;
+    height: 40px;
+    outline: none;
+}
+
+hr {
+    background: blue;
+    box-shadow: 0 0 5px blue;
+}
+
+._AddCanDetail {
+    padding: 6px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    letter-spacing: 1px;
+    height: 35px;
+    outline: none;
+}
+
+._btnsub {
+    background: linear-gradient(to top, #AAC4FF,60%,white);
+    border: 1px solid;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    transition: 0.2s ease-in;
+}
+
+    ._btnsub:active {
+        transform: scale(0.93);
+    }
+
+._candImage {
+    margin: auto;
+    border: 1px solid;
+    height: 370px;
+    width: 400px;
+}
+
+.lbl{
+    margin-bottom:-3px;
+}

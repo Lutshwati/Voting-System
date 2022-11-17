@@ -1,0 +1,43 @@
+#drpWards {
+box-shadow:0 0 5px blue;
+width:150px;
+height:40px;
+outline:none;
+}
+
+hr {
+background:blue;
+box-shadow:0 0 5px blue;
+}
+
+._canDetail {
+margin-top:2px;
+margin-bottom:2px;
+border:1px solid blue;
+border-radius:5px;
+box-shadow:0 0 2px;
+height:35px;
+outline:none;
+}
+
+._btnsub {
+ background:linear-gradient(to top, #AAC4FF,60%,white);
+ border:1px solid;
+ border-radius:5px;
+ box-shadow:0 0 5px blue;
+ width:150px;
+ height:30px;
+ transition:0.2s ease-in;
+}
+._btnsub:active {
+ transform:scale(0.93);
+ 
+}
+
+._candImage {
+ margin:auto;
+ box-shadow:0 0 5px blue;
+ border:1px solid;
+ height:150px;
+ width:200px;
+}

@@ -1,0 +1,44 @@
+﻿
+.modal {
+    padding: 10px;
+    background: linear-gradient(to top, #AAC4FF,68%,#EEF1FF);
+    height: 400px;
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px blue;
+}
+
+.Close {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.citizenLog {
+    margin-top: 100px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    height: 40px;
+    background: linear-gradient(to top, #AAC4FF,70%,white);
+    box-shadow: 0 0 5px blue;
+    transition: 0.2s ease-in-out;
+}
+
+    .citizenLog:active {
+        transform: scale(0.95);
+    }
+
+.cred {
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    outline: none;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px blue;
+}

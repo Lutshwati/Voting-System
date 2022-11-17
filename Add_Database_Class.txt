@@ -1,0 +1,28 @@
+
+
+  SqlConnection conn;
+
+        public SqlConnection getConnection()
+        {
+            string connStr = "";
+            conn = new SqlConnection(connStr);
+            conn.Open;
+            return conn();
+        }
+
+        public SqlDataReader reader(string query)
+        {
+            SqlCommand comm = new SqlCommand(query);
+            comm.CommandType = System.Data.CommandType.Text;
+            comm.Connection = this.getConnection();
+
+            SqlDataReader reader = comm.ExecuteReader();
+            return reader;
+
+        }
+
+        public void closeConnection()
+        {
+            this.conn.Close();
+        }
+

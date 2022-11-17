@@ -1,0 +1,39 @@
+.container4 {
+ background:#D2DAFF;
+ padding:15px;
+ font-family:Times New Roman;
+ letter-spacing:1px;
+}
+
+._Cand {
+ padding-Top:50px;
+ padding-bottom:25px;
+ justify-items:center;
+}
+._imgCand {
+ margin:auto;
+ border:none;
+ box-shadow:0 0 5px blue;
+
+}
+._fields {
+ font-size:16px;
+ margin-left:10px;
+}
+
+
+._Figure{
+font-style:italic;
+ font-size:16px;
+ opacity:0.7;
+}
+
+._ConfirmV {
+ width:200px;
+ height:40px;
+ background:linear-gradient(to top, #D2DAFF,60%,white);
+ margin-top:100px;
+ border:1px solid;
+ box-shadow:0 0 5px blue;
+ border-radius:5px;
+}

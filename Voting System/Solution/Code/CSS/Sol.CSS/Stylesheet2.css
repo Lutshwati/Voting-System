@@ -1,0 +1,145 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+}
+/*main MASTER*/
+.navbar-toggler{
+    border:none;
+    transition:ease 0.6s;
+    left:10px;
+}
+.navbar-toggler:hover{
+    background-color:darkblue;
+   cursor:pointer;
+   height:45px;
+   width:60px;
+}
+
+/*Home Page Content*/
+.Main{
+    background-color:whitesmoke;
+}
+
+
+/*Sign sup Page*/
+.Credentials {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),
+        url("../../../Resources/Pictures/featured-vote.jpg");
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.Credentials #_Sign_Up {
+    box-sizing: border-box;
+    padding: 30px;
+    right: 5px;
+    box-shadow: 0 0 10px grey;
+    margin-left: 50%;
+    border: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7)50%,rgba(0,0,0,0.7)50%);
+    width: 500px;
+    height: max-content;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#_name{
+    width:50px;
+    outline:none;
+}
+#_Lname {
+    width: 10px;
+    outline:none;
+}
+#_employee {
+    width: 10px;
+    outline:none;
+}
+#_mail {
+    width: 10px;
+    outline:none;
+}
+#_IDn {
+    height:25px;
+    outline:none;
+}
+#_foun {
+    height:25px;
+    outline:none;
+}
+#_btnSignUp {
+   padding-left:50px; 
+   padding-right:50px;
+   padding-top:10px;
+   padding-bottom:10px;
+   border-style:inherit; 
+   border-top-left-radius:25px; 
+   border-top-right-radius:25px; 
+   border-bottom-left-radius:25px; 
+   border-bottom-right-radius:25px;
+}
+
+/*
+__________________________________________________________________________________________________  
+    
+    Registration Page
+__________________________________________________________________________________________________
+*/
+
+#_Cont{
+    height: 100%;
+    background-color: #EEEEEE;
+}
+    #_Cont #_RegInput {
+
+    }
+    #_Cont #_regHead{
+        font-family:'Times New Roman';
+        font-size:26px;
+        letter-spacing:1px;
+        margin-bottom:7%;
+    }
+    #_Cont #_RegInput #_inputCover {
+        box-shadow: 0 0 5px grey;
+        background: linear-gradient(to top, #EEF1FF,60%,#D2DAFF);
+        padding-top: 10%;
+        padding-bottom: 10%;
+        margin-left: 6%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 75%;
+        height: 90%;
+    }
+            #_Cont #_RegInput #_inputCover .Regitem {
+                height: 10%;
+                width:90%;
+                box-shadow: 0 0 5px blue;
+                outline: none;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                border: inherit;
+                position: relative;
+            }
+            #_Cont #_RegInput #_inputCover .Regitems2 {
+                height:10%;
+                width:90%;
+                box-shadow: 0 0 5px blue;
+                outline: none;
+                margin-top: 2%;
+                margin-bottom: 2%;
+                border: inherit;
+                position: relative;
+            }
+            #_Cont #_RegInput #_inputCover ._btnReg {
+                background: linear-gradient(to top, #B1B2FF,70%,#F2F2F2);
+                width: 80%;
+                height:15%;
+                border-style:inherit;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                box-shadow:0 0 4px blue;
+            }
+
